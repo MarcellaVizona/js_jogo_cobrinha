@@ -29,7 +29,7 @@ let food = {
 // função para criar o backgraud
 
 function criarBG() {
-    context.fillStyle = "lightgreen";
+    context.fillStyle = "white";
     // desenha o retangulo usando x e y e a largura e altura setadas 
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
@@ -38,7 +38,7 @@ function criarBG() {
 
 function criarCobrinha() {
     for (i = 0; i < snake.length; i++) {
-        context.fillStyle = "green";
+        context.fillStyle = "pink";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
@@ -47,7 +47,7 @@ function criarCobrinha() {
 // criar comida
 
 function drawFood() {
-    context.fillStyle = "red"
+    context.fillStyle = "purple"
     context.fillRect(food.x, food.y, box, box)
 }
 
@@ -76,7 +76,7 @@ function iniciarJogo() {
     if (snake[0].y > 15 * box && direction == "down") {
         snake[0].y = 0;
     }
-    if (snake[0].y > 0 && direction == "up") {
+    if (snake[0].y < 0 && direction == "up") {
         snake[0].y = 16 * box;
     }
 
@@ -117,5 +117,5 @@ function iniciarJogo() {
 
 }
 
-let jogo = setInterval(iniciarJogo, 1000)
+let jogo = setInterval(iniciarJogo, 250)
 

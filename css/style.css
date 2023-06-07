@@ -3,5 +3,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(224, 26, 92);
+}
 
+h1{
+    font-family: Lucida Handwriting;
+    color: white;
 }
