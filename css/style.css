@@ -16,7 +16,8 @@ h1{
 
 h2{
     color:white;
-    margin-left: -400px;
+    margin-left: -330px;
+  
 }
 
 img{
@@ -27,7 +28,7 @@ img{
 }
 
 #gamesnake{
-    margin-top: -55px;
+    margin-top: -503px;
 }
 
 .reiniciar{
@@ -41,5 +42,9 @@ img{
 }
 
 #btnReiniciar{
-    justify-items: left;
+
+    position: relative;
+    right: 500px;
+    margin-top: 390px;
 }
+
