@@ -4,9 +4,42 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(224, 26, 92);
+    
 }
 
 h1{
     font-family: Lucida Handwriting;
     color: white;
+    font-size: 30px;
+
+}
+
+h2{
+    color:white;
+    margin-left: -400px;
+}
+
+img{
+    height: 24px;
+    width: 24px;
+    text-align: right;
+   
+}
+
+#gamesnake{
+    margin-top: -55px;
+}
+
+.reiniciar{
+    border-radius: 10px;
+    background-color: #fffefe;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 9px 28px;
+    font-family: Lucida Handwriting ;
+    font-size: 35;
+    margin-top: 50px;
+}
+
+#btnReiniciar{
+    justify-items: left;
 }

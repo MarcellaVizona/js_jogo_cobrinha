@@ -1,3 +1,5 @@
+let pontos = 0;
+
 // criar elemento que irá rodar o jogo
 
 let canvas = document.getElementById("gamesnake");
@@ -81,6 +83,7 @@ function iniciarJogo() {
     }
 
     for (i = 1; i < snake.length; i++) {
+        document.getElementById('pontos').innerText = pontos;
         if (snake[0].x == snake[i].x && snake[0].y == snake[i].y) {
             clearInterval(jogo);
             alert('Game Over :(')
@@ -104,6 +107,7 @@ function iniciarJogo() {
     } else {
         food.x = Math.floor(Math.random() * 15 + 1) * box;
         food.y = Math.floor(Math.random() * 15 + 1) * box;
+        pontos++
     }
 
     let newHead = {
@@ -119,3 +123,5 @@ function iniciarJogo() {
 
 let jogo = setInterval(iniciarJogo, 250)
 
+
+   
