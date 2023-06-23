@@ -125,7 +125,7 @@ function iniciarJogo() {
 
 }
 
-let jogo = setInterval(iniciarJogo, 250)
+let jogo = setInterval(iniciarJogo, 200)
 
 
    
